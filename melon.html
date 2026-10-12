@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>멜론 차트</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/melon.css">
+</head>
+<body>
+<div class="wrap">
+  <h1 class="title">멜론 차트 <small>TOP 100</small></h1>
+
+  <section class="top">
+    <h2 class="h2">TOP 12</h2>
+    <div class="slider">
+      <div id="top-swiper" class="swiper">
+        <div class="swiper-wrapper" id="top-list"></div>
+      </div>
+      <button type="button" class="nav prev" id="top-prev" aria-label="이전"></button>
+      <button type="button" class="nav next" id="top-next" aria-label="다음"></button>
+    </div>
+  </section>
+
+  <section class="rest">
+    <h2 class="h2">13위 ~ 100위</h2>
+    <ol class="list" id="rest-list"></ol>
+  </section>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/melon.js"></script>
+</body>
+</html>
